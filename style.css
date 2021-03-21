@@ -1,0 +1,283 @@
+@font-face {
+	font-family:"Raleway";
+	src: url("Raleway.ttf");
+}
+
+body {
+	display:block;
+	font-family: Raleway, Georgia, Sans-serif;
+	margin:0;
+}
+
+#menu_desktop {
+	display: flex;
+	flex-direction: row;
+	height:75px;
+	width:100%;
+	vertical-align: middle;
+	position:relative;
+}
+
+#contenant_menu_mobile {
+	display:none;
+}
+
+.mon_nom {
+	margin:0;
+	padding-left:10px;
+	border-right: #fff solid 1px;
+	vertical-align: middle;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 10px;
+    z-index:3;
+}
+
+header, nav {
+	background-color: #1F618D;
+	color:#ffffff;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	width:100%;
+	margin:0;
+}
+
+section {
+	background-color: #ffffff;
+	text-align:center;
+	margin-top:5px;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.image_couv {
+	width:100%;
+}
+
+.texte_couv1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -600%);
+  color:#1F618D;
+  text-shadow: 2px 2px 4px white;
+}
+
+.texte_couv2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -490%);
+  color:#1F618D;
+  text-shadow: 2px 2px 4px white;
+}
+
+.texte_couv3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#1F618D;
+  text-shadow: 2px 2px 4px white;
+}
+
+a {
+	color: #1F618D;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+.nav a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color:#ffffff;
+	padding: 20px;
+}
+
+.nav {
+	font-size: 1em;
+	text-decoration: none;
+}
+
+.soustitre {
+	font-weight:bold;
+	font-size:1.2em;
+	text-shadow: 2px 2px 4px white;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.cta_cv {
+	background-color:#1F618D;
+	color:#ffffff;
+	font-weight: bold;
+	border-radius:10px;
+	padding:10px;
+	position: absolute;
+  	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, 280%);
+}
+
+.texte_reconversion {
+	text-align:justify;
+	width: 800px;
+	margin:auto;
+	padding-bottom: 20px;
+}
+
+footer {
+	background-color: #1F618D;
+	color:#ffffff;
+	display:flex;
+	flex-direction: row;
+}
+
+.texte_footer {
+	margin:0;
+	padding:20px;
+}
+
+.contact_mail {
+	margin:0;
+	padding:20px;
+	color:#FFFFFF;
+}
+
+@media all and (max-width: 1024px) {
+
+#menu_desktop {
+	display:none;
+}
+
+#contenant_menu_mobile {
+	display:block;
+	min-height:60px;
+	width:100%;
+	position:relative;
+}
+
+#menu_mobile {
+ 	position: relative;
+ 	top: 17px;
+ 	right: 30px;
+ 	z-index: 1;
+ 	-webkit-user-select: none;
+ 	user-select: none;
+}
+
+.titres_mobile {
+	text-decoration: none;
+	color:#ffffff;
+}
+
+#menu_mobile input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menu_mobile span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  right:-945px;
+  
+  background: #FFFFFF;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+
+#menu_mobile span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menu_mobile span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menu_mobile input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu_mobile input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menu_mobile input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#nav_mobile
+{
+  position: absolute;
+  width: 250px;
+  margin: -100px 0 0 30px;
+  padding: 15px;
+  padding-top: 115px;
+  text-align:left;
+  right:-30px;
+  background: #1F618D;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate( 100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#nav_mobile li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu_mobile input:checked ~ ul
+{
+  transform: none;
+}
+
+}
