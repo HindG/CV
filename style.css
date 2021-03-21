@@ -141,6 +141,39 @@ ul {
 	padding-bottom: 20px;
 }
 
+.contenant_exp {
+	width:700px;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	border-bottom: #DCDCDC solid 1px;
+}
+
+.titre_exp {
+	font-weight:bold;
+	color:#1F618D;
+	text-align:left;
+	margin:0;
+}
+
+.soustitre_exp {
+	color:#696969;
+	text-align:left;
+	margin:0;
+}
+
+.text_exp {
+	text-align:left;
+	margin:0;
+}
+
+.liste_exp {
+	text-align:left;
+	background-color:#DCDCDC;
+	padding:10px;
+	margin:0;
+}
+
 footer {
 	background-color: #1F618D;
 	color:#ffffff;
@@ -160,6 +193,10 @@ footer {
 }
 
 @media all and (max-width: 1024px) {
+
+.mon_nom {
+	font-size:2em;
+}
 
 #menu_desktop {
 	display:none;
