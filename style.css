@@ -1,6 +1,6 @@
 @font-face {
 	font-family:"Raleway";
-	src: url("Raleway.ttf");
+	src: url("img/Raleway.ttf");
 }
 
 body {
@@ -9,7 +9,22 @@ body {
 	margin:0;
 }
 
-#menu_desktop {
+a {
+	color: #1F618D;
+}
+
+.img_exp {
+	width:160px;
+	margin:auto;
+}
+
+.img_formation {
+	width:110px;
+	margin:auto;
+}
+}
+
+#contenant_menu_desktop {
 	display: flex;
 	flex-direction: row;
 	height:75px;
@@ -26,12 +41,14 @@ body {
 	margin:0;
 	padding-left:10px;
 	border-right: #fff solid 1px;
-	vertical-align: middle;
 	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     padding-right: 10px;
     z-index:3;
+}
+
+.link_principal {
+    text-decoration:none;
+    color:#FFFFFF;	
 }
 
 header, nav {
@@ -81,6 +98,7 @@ section {
   transform: translate(-50%, -490%);
   color:#1F618D;
   text-shadow: 2px 2px 4px white;
+  font-size:1.3em;
 }
 
 .texte_couv3 {
@@ -90,11 +108,9 @@ section {
   transform: translate(-50%, -50%);
   color:#1F618D;
   text-shadow: 2px 2px 4px white;
+  font-size:1.2em;
 }
 
-a {
-	color: #1F618D;
-}
 
 ul {
 	list-style-position: inside;
@@ -112,9 +128,8 @@ ul {
 	text-decoration: none;
 }
 
-.soustitre {
+.soustitre_reconversion .soustitre_couv {
 	font-weight:bold;
-	font-size:1.2em;
 	text-shadow: 2px 2px 4px white;
 }
 
@@ -139,14 +154,17 @@ ul {
 	width: 800px;
 	margin:auto;
 	padding-bottom: 20px;
+	width:650px;
 }
 
 .contenant_exp {
-	width:700px;
+	width:850px;
 	margin:auto;
 	margin-top:30px;
 	margin-bottom:30px;
 	border-bottom: #DCDCDC solid 1px;
+	display:flex;
+	flex-direction:row;
 }
 
 .titre_exp {
@@ -160,6 +178,7 @@ ul {
 	color:#696969;
 	text-align:left;
 	margin:0;
+	padding-bottom:10px;
 }
 
 .text_exp {
@@ -171,7 +190,18 @@ ul {
 	text-align:left;
 	background-color:#DCDCDC;
 	padding:10px;
-	margin:0;
+	margin:auto;
+	width:650px;
+}
+
+.videos {
+	width:200px;
+	padding:10px;
+	margin:auto;
+}
+
+.contenant_loisirs {
+	margin:auto;
 }
 
 footer {
@@ -196,9 +226,10 @@ footer {
 
 .mon_nom {
 	font-size:2em;
+	padding:10px;
 }
 
-#menu_desktop {
+#contenant_menu_desktop {
 	display:none;
 }
 
@@ -315,6 +346,32 @@ footer {
 #menu_mobile input:checked ~ ul
 {
   transform: none;
+}
+
+.texte_couv1 {
+	font-size:2em;
+	transform: translate(-50%, -530%);
+}
+
+.soustitre_couv {
+	font-size:2em;
+}
+
+.soustitre_reconversion {
+	font-size:1em;
+}
+
+.texte_reconversion {
+	font-size:0.8em;
+}
+
+.img_exp {
+	padding-bottom:15px;
+}
+
+.contenant_exp {
+	display:flex;
+	flex-direction: column;
 }
 
 }
