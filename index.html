@@ -9,8 +9,8 @@
     <body>
     	<header>
     		<div id="contenant_menu_desktop">
-    			<h2 class="mon_nom"><a href="http://hindguessous.fr" class="link_principal">Hind<br />Guessous</a></h2>
-    			<nav>
+    			<h2 class="mon_nom"><a href="http://hindguessous.fr" class="lien_header">Hind<br />Guessous</a></h2>
+    			<nav class="header_nav_desktop">
     				<p class="nav"><a href="experiences.html">Expériences Professionnelles</a></p>
     				<p class="nav"><a href="formation.html">Formations</a></p>
     				<p class="nav"><a href="competences.html">Compétences</a></p>
@@ -18,7 +18,7 @@
     			</nav>
     		</div>
     		<div id="contenant_menu_mobile">
-    			<h2 class="mon_nom"><a href="index.html" class="link_principal">Hind Guessous</a></h2>
+    			<h2 class="mon_nom"><a href="index.html" class="lien_header">Hind Guessous</a></h2>
     			<div id="menu_mobile">
     				<input type="checkbox" />
     				<span></span>
@@ -33,29 +33,31 @@
     			</div>
     		</div>
     	</header>
-
         <section class="intro">
-            <img class="image_couv" src="img/major.jpg" alt="Photo de Marsseille" />
-            <h1 class="texte_couv1"><strong>Développeur Web en alternance</strong></h1>
+        	<div class="display_mobile">
+            <h1 class="texte_couv1"><strong>En recherche d'une alternance Développeur Web</strong></h1>
             <h3 class="texte_couv2">Disponible immédiatement - Marseille</h3>
-            <p class="texte_couv3"><span class="soustitre"><a target="_blank" href="img/plaquette.pdf">Alternance OpenClassRooms - 9 mois</a></span><br /><span class="bold">Semaine A</span> : 2 jours  en formation, 3 jours en entreprise.<br /><span class="bold">Semaine B</span> : 1 jour en formation, 4 jours en entreprise. <br />HTML5, CSS3, Javascript, SQL.<br /><br />
-            Eligible à la prime d'aide à l'embauche de 8 000€</p>
-            <p><a target="_blank" href="img/CV_Hind_Guessous.pdf"><span class="cta_cv">Télécharger le CV</span></a></p>
+            <p class="texte_couv3"><span class="soustitre"><a target="_blank" href="img/plaquette.pdf" class="lien_plaquette">Alternance OpenClassRooms - 12 mois</a></span><br /><span class="bold">Semaine A</span> : 2 jours  en formation, 3 jours en entreprise.<br /><span class="bold">Semaine B</span> : 1 jour en formation, 4 jours en entreprise. <br />HTML5, CSS3, Javascript, SQL.<br /><br />
+            Eligible à la prime d'aide à l'embauche de <span class="bold">8 000€</span></p>
+            <p class="contenant_cta_cv"><a target="_blank" href="img/CV_Hind_Guessous.pdf" class="cta_cv">Télécharger le CV</a></p>
+        	</div>
+        	<img src="img/major2.jpg" alt="Photo de Marseille" class="image_couv"/>
         </section>
         <section>
-            <div>
+            <div class="display_mobile">
                 <h3 class="soustitre">Pourquoi une reconversion ?</h3>
                 <p class="texte_reconversion">Après 4 ans passés dans le Marketing Digital, je me suis aperçue que les sujets techniques me passionnaient au point de me donner envie d'y travailler à plein temps. En effet, dans tous mes emplois, mes managers ont valorisé ma compréhension des <strong>sujets techniques</strong> et mon enthousiasme à essayer de comprendre les choses par moi-même lorsque quelque chose ne fonctionnait pas.<br />
-                C'est pour cela que j'ai décidé de reconvertir en tant que <strong>Développeur Web</strong>, et cela grâce à une formation en alternance. 
+                C'est pour cela que j'ai décidé de me reconvertir en tant que <strong>Développeur Web</strong>, et cela grâce à une formation en alternance. 
                 </p>
             </div>
         </section>
-    	
         <footer>
-    			<p class="texte_footer">© Hind Guessous 2021</p>
-    			<a href="mailto:guessoushind@gmail.com"><p class="contact_mail">Contact</p></a>
-                <a href="https://www.linkedin.com/in/hindguessous/" target="_blank"><p class="contact_mail">LinkedIn</p></a>
-                <a href="https://github.com/HindG" target="_blank"><p class="contact_mail">GitHub</p></a>
+        	<div class="texte_footer">
+    			<p>© Hind Guessous 2021</p>
+    			<a href="mailto:guessoushind@gmail.com" class="contact"><p>Contact</p></a>
+                <a href="https://www.linkedin.com/in/hindguessous/" target="_blank" class="contact"><p>LinkedIn</p></a>
+                <a href="https://github.com/HindG" target="_blank" class="contact"><p>GitHub</p></a>
+            </div>
     	</footer>
     </body>
 </html>
